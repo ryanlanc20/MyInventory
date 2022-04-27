@@ -1,38 +1,27 @@
-# CakePHP Application Skeleton
+# Personal inventory management system (Created using CakePHP)
 
-![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%207-brightgreen.svg?style=flat-square)](https://github.com/phpstan/phpstan)
+This inventory management system uses the CakePHP framework, and utilizes the MVC pattern.
+It allows people to create their own accounts and manage their personal belongings, including serial numbers, descriptions, etc...
 
-A skeleton for creating applications with [CakePHP](https://cakephp.org) 4.x.
+## Running the project
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+This project contains a built-in server; there is no need to download/host your own webserver.
 
-## Installation
-
-1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
-
-If Composer is installed globally, run
-
-```bash
-composer create-project --prefer-dist cakephp/app
-```
-
-In case you want to use a custom app dir name (e.g. `/myapp/`):
+To start the webserver, you can type the following command in command prompt/terminal. 
+Except, of course, 'bin/cake' will not work on windows and needs to be swapped for 'bin\cake'.
+The port flag -p specifies the port number that the webserver can be accessed by. In this case,
+8765 is specified, meaning that web requests must be sent to http://<IP_OR_HOSTNAME>:8765. 
+However, be aware that terminating/restarting the web server rapidly may require a change in port number on UNIX platforms.
+It can take some time for UNIX systems to release ports.
 
 ```bash
-composer create-project --prefer-dist cakephp/app myapp
+bin/cake server -p 8767
 ```
 
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
+Typically, you can access the webserver using http://localhost:8765
+Alternatively, you can use http://127.0.0.1:8765 instead.
 
-```bash
-bin/cake server -p 8765
-```
-
-Then visit `http://localhost:8765` to see the welcome page.
+# Some important notes from the CakePHP skeleton readme
 
 ## Update
 
