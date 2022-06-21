@@ -6,6 +6,7 @@ It allows people to create their own accounts and manage their personal belongin
 ## Running the project
 
 This project contains a built-in server; there is no need to download/host your own webserver.
+However, you will need to run a database server of your choice, which uses SQL (if you want to use the Cake ORM).
 
 To start the webserver, you can type the following command in command prompt/terminal. 
 Except, of course, 'bin/cake' will not work on windows and needs to be swapped for 'bin\cake'.
